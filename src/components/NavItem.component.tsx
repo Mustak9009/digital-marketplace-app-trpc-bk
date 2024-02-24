@@ -27,11 +27,11 @@ export default function NavItem({category,handleOpen,isOpen,isAnyOpen}: NavItemP
         </Button>
       </div>
       {isOpen ? (
-        <div className={cn("absolute inset-x-0 top-full text-sm text-muted-foreground",{
+        <div className={cn("absolute inset-x-0 top-full text-sm text-muted-foreground bg-white",{
           "animate-in fade-in-10 slide-in-from-top-5":!isOpen //The tailwind class comes from -> tailwindcss-animate package
         })}>
-          <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden={true}/>
-          <div className="relative bg-white">
+          <div className="absolute inset-0 top-1/2 bg-inherit" aria-hidden={true}/>
+          <div className="relative bg-inherit">
             <div className="max-w-7xl mx-auto px-8">
               <div className="grid grid-cols-4 gap-x-4 gap-y-8 py-16">
                 <div className="grid grid-cols-3 gap-x-8 col-span-4 col-start-1">
